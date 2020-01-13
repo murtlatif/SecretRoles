@@ -1,0 +1,22 @@
+@import "_config.scss";
+
+.main-content {
+    padding: 50px;
+    text-align: center;
+    color: $lightGrey;
+
+    #room-btn {
+        margin-top: 20px;
+    }
+
+    #back-btn {
+        position: absolute;
+        left: 5%;
+    }
+
+    .role-list {
+        width: 60%;
+        margin: auto;
+        margin-top: 50px;
+    }
+}

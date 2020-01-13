@@ -1,0 +1,42 @@
+/*
+Vars
+*/
+$black: #010000;
+$white: #ffffff;
+$lightGrey: #e6e6e6;
+$darkGrey: #2E3532;
+$blue: #3F6083;
+$darkBlue: #273B51;
+$red: #F45B69;
+
+
+/*
+Mixins
+*/
+
+@mixin transition($e) {
+    -webkit-transition:$e;
+       -moz-transition:$e;
+            transition:$e;
+}
+
+body {
+    font-family: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+    font-size: 18px;
+    color: $black;
+    font-weight: 400;
+    font-style: normal;
+    background-color: $blue;
+}
+
+a {
+    text-decoration: none;
+
+    @include transition(.2s ease-in-out);
+    cursor: pointer;
+
+    &:hover {
+        color: $red;
+        @include transition(.2s ease-in-out);
+    }
+}
